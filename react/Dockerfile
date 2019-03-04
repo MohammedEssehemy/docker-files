@@ -22,7 +22,7 @@ USER root
 
 RUN echo 'server { \
     listen       8080; \
-    server_name  localhost; \
+    server_name  ـ; \
     gzip on; \
     gzip_types    text/plain application/javascript application/x-javascript text/javascript text/xml text/css; \
     location / { \
