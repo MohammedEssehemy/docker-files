@@ -4,7 +4,7 @@ LABEL maintainer="Mohammed Essehemy <mohammedessehemy@gmail.com>"
 
 WORKDIR /app
 
-COPY package.json .
+COPY package.json package-lock.json ./
 
 RUN npm install && npm audit fix
 
