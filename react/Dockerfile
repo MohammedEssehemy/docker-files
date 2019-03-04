@@ -1,5 +1,7 @@
 FROM node:alpine AS builder
 
+LABEL maintainer="Mohammed Essehemy <mohammedessehemy@gmail.com>"
+
 WORKDIR /app
 
 COPY package.json .

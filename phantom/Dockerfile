@@ -1,11 +1,12 @@
 # Switch Node images to non-alpine as PhantomJS doesn't run on Alpine
 FROM node:10-jessie-slim
+
 LABEL maintainer="Mohammed Essehemy <mohammedessehemy@gmail.com>"
 
 ENV BUILD_PACKAGES="curl build-essential g++ flex bison gperf ruby perl \
-libssl-dev libpng-dev libjpeg-dev python \
-libx11-dev libxext-dev libsqlite3-dev \
-libicu-dev libfreetype6"
+  libssl-dev libpng-dev libjpeg-dev python \
+  libx11-dev libxext-dev libsqlite3-dev \
+  libicu-dev libfreetype6"
 
 ENV RUN_PACKAGES="libfontconfig"
 

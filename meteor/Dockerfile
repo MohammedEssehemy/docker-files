@@ -1,4 +1,5 @@
 FROM node:8.12-stretch as build-stage
+
 LABEL maintainer="Mohammed Essehemy <mohammedessehemy@gmail.com>"
 
 ENV METEOR_ALLOW_SUPERUSER=true
@@ -16,7 +17,9 @@ COPY ./ ./
 RUN meteor build --server-only --architecture os.linux.x86_64 --directory /build
 
 
+
 FROM node:8.12-alpine
+
 LABEL maintainer="Mohammed Essehemy <mohammedessehemy@gmail.com>"
 
 ENV BUILD_PACKAGES="libgcc libstdc++ python linux-headers make gcc g++ git libuv bash curl tar bzip2 build-base"
