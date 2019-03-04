@@ -18,6 +18,8 @@ FROM nginxinc/nginx-unprivileged:stable-alpine
 
 LABEL maintainer="Mohammed Essehemy <mohammedessehemy@gmail.com>"
 
+EXPOSE 8080
+
 USER root
 
 RUN echo 'server { \

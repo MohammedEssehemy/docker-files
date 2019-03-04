@@ -3,6 +3,8 @@ FROM node:10-jessie-slim
 
 LABEL maintainer="Mohammed Essehemy <mohammedessehemy@gmail.com>"
 
+EXPOSE 3000
+
 ENV BUILD_PACKAGES="curl build-essential g++ flex bison gperf ruby perl \
   libssl-dev libpng-dev libjpeg-dev python \
   libx11-dev libxext-dev libsqlite3-dev \

@@ -2,6 +2,8 @@ FROM node:10-alpine
 
 LABEL maintainer="Mohammed Essehemy <mohammedessehemy@gmail.com>"
 
+EXPOSE 3000
+
 WORKDIR /home/node/source
 
 COPY package.json package-lock.json ./

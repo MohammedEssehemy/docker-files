@@ -2,6 +2,8 @@ FROM node:10-alpine
 
 LABEL maintainer="Mohammed Essehemy <mohammedessehemy@gmail.com>"
 
+EXPOSE 3000
+
 ENV BUILD_PACKAGES="libgcc libstdc++ python linux-headers make gcc g++ git libuv bash curl tar bzip2 build-base"
 
 
