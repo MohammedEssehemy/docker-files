@@ -1,0 +1,6 @@
+**/node_modules
+dump
+docker
+coverage
+.git
+.nyc_output
